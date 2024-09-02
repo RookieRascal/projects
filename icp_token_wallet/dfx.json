@@ -1,0 +1,22 @@
+{
+  "canisters": {
+    "icp_token_wallet": {
+      "type": "rust",
+      "candid": "src/icp_token_wallet.did",
+      "wasm": "target/wasm32-unknown-unknown/release/icp_token_wallet.wasm",
+      "build": "cargo build --target wasm32-unknown-unknown --release",
+      "init": "init"
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "package": {
+    "name": "icp_token_wallet",
+    "version": "0.1.0"
+  },
+  "version": 1
+}

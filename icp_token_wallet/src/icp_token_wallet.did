@@ -1,0 +1,5 @@
+service : {
+    send : (text, nat) -> (result);
+    receive : (text, nat) -> ();
+    balance : () -> (nat) query;
+}
